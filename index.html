@@ -25,7 +25,7 @@
 <h1>Is Population Density a Predictor of Social Vulnerability?</h1>
 
 <div class="big">
-  <p> The CDC developed the Social Vulnerability Index (SVI) to estimate the potential level of harm a community could face due to "external stresses on human health." This metric was developed by aggregating data regarding general socioeconomic info, disability, minority status, english comprehension level, housing and transportation availability, and more.</P> 
+  <p> The CDC developed the Social Vulnerability Index (SVI) to estimate the potential level of harm a community could face due to "external stresses on human health." This metric was developed by aggregating data regarding general socioeconomic info, disability, minority status, english comprehension level, housing and transportation availability, and more. SVI is on a scale of 0 to 1, with 0 meaning least vulnerable, and 1 meaning most vulnerable.</P> 
   <p> The GeoTIFF provided by NASA Earthdata was much to high resolution to be usable in this project, at 13353x6297 pixels. In QGIS I was able to load in this raster data and then export a smaller version. I decided to export a medium resolution (4450x2100) and a low resolution (1120x525) version. I did the same thing for the population density data I found for the U.S..</p>
   <p> In order to get the data for the scatterplot, I had to ensure that when exporting from QGIS both files lined up latitude by longitude and pixel by pixel. Therefore, both datasets now have matching bounding boxes and pixel densities.</p>
 </div>
@@ -44,7 +44,7 @@
   <p>Credit: <a href="https://observablehq.com/d/a13394b03d1558a4">Is there a positive correlation between Social Vulnerability Index and Population Density? by Enoch Crow&#039;s Workspace</a></p>
   
   <p>The dataset for Social Vulnerability Index was found at <a href="https://search.earthdata.nasa.gov/search/granules?p=C2820969258-SEDAC&pg[0][v]=f&pg[0][gsk]=-start_date&gdf=GeoTIFF&tl=1709178732!3!!&fs10=Household%20Income&fsm0=Socioeconomics&fst0=Human%20Dimensions&fs11=Poverty%20Levels&fsm1=Socioeconomics&fst1=Human%20Dimensions&lat=41.27531205009219&long=-179.296875">NASA Earthdata</a>. </p> 
-  <p>The dataset for the population density of the U.S. in 2020 was found at<a href="https://data.humdata.org/dataset/worldpop-population-density-for-united-states-of-america?">Humanitarian Data Exchange</a>. </p>
+  <p>The dataset for the population density of the U.S. in 2020 was found at <a href="https://data.humdata.org/dataset/worldpop-population-density-for-united-states-of-america?">Humanitarian Data Exchange</a>. </p>
   <p>The graphics were made with <a href="https://observablehq.com/plot/">Observable Plot</a>. </p>
 
   <p>The GeoTIFF's were processed in <a href="https://qgis.org/en/site/index.html">QGIS</a>. </p>
